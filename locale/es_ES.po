@@ -1,0 +1,83 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.line,descriptions:"
+msgid "Descriptions"
+msgstr "Descripciones"
+
+msgctxt "field:sale.line-typified.description,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.line-typified.description,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.line-typified.description,description:"
+msgid "Typified Description"
+msgstr "Descripcion tipificada"
+
+msgctxt "field:sale.line-typified.description,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.line-typified.description,line:"
+msgid "Sale Line"
+msgstr "Línea de venta"
+
+msgctxt "field:sale.line-typified.description,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.line-typified.description,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.line-typified.description,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.order-typified.description,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.order-typified.description,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.order-typified.description,description:"
+msgid "Typified Description"
+msgstr "Descripcion tipificada"
+
+msgctxt "field:sale.order-typified.description,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.order-typified.description,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.order-typified.description,sale:"
+msgid "Sale"
+msgstr "Venta"
+
+msgctxt "field:sale.order-typified.description,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.order-typified.description,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.sale,descriptions:"
+msgid "Descriptions"
+msgstr "Descripciones"
+
+msgctxt "model:sale.line-typified.description,name:"
+msgid "Sale Line - TypifDescription"
+msgstr "Línea de venta - Descripcion tipificada"
+
+msgctxt "model:sale.order-typified.description,name:"
+msgid "Sale Order - TypifDescription"
+msgstr "Venta - Descripcion tipificada"
