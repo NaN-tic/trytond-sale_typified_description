@@ -3,8 +3,8 @@
      copyright notices and license terms. -->
 <data>
     <xpath expr="/form/notebook" position="inside">
-        <page name="descriptions">
-            <field name="descriptions"/>
+        <page name="terms">
+            <field name="terms"/>
         </page>
     </xpath>
 </data>

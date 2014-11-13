@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+
+        <record model="res.group" id="group_typified_description_admin">
+            <field name="name">Typified Description Administration</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_typified_description_admin">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_typified_description_admin"/>
+        </record>
+        <record model="res.user-res.group" id="user_trigger_group_typified_description_admin">
+            <field name="user" ref="res.user_trigger"/>
+            <field name="group" ref="group_typified_description_admin"/>
+        </record>
+        <record model="ir.ui.view" id="typified_description_view_form">
+            <field name="model">typified.description</field>
+            <field name="type">form</field>
+            <field name="name">typified_description_form</field>
+        </record>
+        <record model="ir.ui.view" id="typified_description_view_list">
+            <field name="model">typified.description</field>
+            <field name="type">tree</field>
+            <field name="name">typified_description_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_typified_description">
+            <field name="name">Sale Terms</field>
+            <field name="res_model">typified.description</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_typified_description_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="typified_description_view_list"/>
+            <field name="act_window" ref="act_typified_description"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_typified_description_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="typified_description_view_form"/>
+            <field name="act_window" ref="act_typified_description"/>
+        </record>
+        <record model="ir.model.access" id="access_typified_description">
+            <field name="model" search="[('model', '=', 'typified.description')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_typified_description_admin">
+            <field name="model" search="[('model', '=', 'typified.description')]"/>
+            <field name="group" ref="group_typified_description_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.ui.view" id="typified_description_category_view_form">
+            <field name="model">typified.description.category</field>
+            <field name="type">form</field>
+            <field name="name">typified_description_category_form</field>
+        </record>
+        <record model="ir.ui.view" id="typified_description_category_view_list">
+            <field name="model">typified.description.category</field>
+            <field name="type">tree</field>
+            <field name="name">typified_description_category_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_typified_description_category">
+            <field name="name">Categories</field>
+            <field name="res_model">typified.description.category</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_typified_description_category_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="typified_description_category_view_list"/>
+            <field name="act_window" ref="act_typified_description_category"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_typified_description_category_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="typified_description_category_view_form"/>
+            <field name="act_window" ref="act_typified_description_category"/>
+        </record>
+        <record model="ir.model.access" id="access_typified_description_category">
+            <field name="model" search="[('model', '=', 'typified.description.category')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_typified_description_category_admin">
+            <field name="model" search="[('model', '=', 'typified.description.category')]"/>
+            <field name="group" ref="group_typified_description_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <!-- Menus -->
+        <menuitem id="menu_typified_description" name="Sale Terms"
+            parent="sale.menu_configuration" sequence="90" />
+
+          <record model="ir.ui.menu-res.group" id="menu_typified_description_group_typified_description_admin">
+            <field name="menu" ref="menu_typified_description"/>
+            <field name="group" ref="group_typified_description_admin"/>
+          </record>
+
+          <menuitem action="act_typified_description_category"
+              id="menu_typified_description_category"
+              parent="menu_typified_description" sequence="10"/>
+
+          <menuitem action="act_typified_description"
+              id="menu_typified_description_form"
+              parent="menu_typified_description"
+              sequence="20"/>
+    </data>
+</tryton>
