@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <tryton>
     <data>
-
         <record model="res.group" id="group_typified_description_admin">
             <field name="name">Typified Description Administration</field>
         </record>
