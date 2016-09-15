@@ -1,0 +1,191 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.line,terms:"
+msgid "Sale term"
+msgstr "Verkaufsbedingung"
+
+msgctxt "field:sale.line-typified.description,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:sale.line-typified.description,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:sale.line-typified.description,description:"
+msgid "Term"
+msgstr "Bedingung"
+
+msgctxt "field:sale.line-typified.description,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.line-typified.description,line:"
+msgid "Sale Line"
+msgstr "Verkaufsposition"
+
+msgctxt "field:sale.line-typified.description,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:sale.line-typified.description,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:sale.line-typified.description,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:sale.order-typified.description,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:sale.order-typified.description,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:sale.order-typified.description,description:"
+msgid "Term"
+msgstr "Bedingung"
+
+msgctxt "field:sale.order-typified.description,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.order-typified.description,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:sale.order-typified.description,sale:"
+msgid "Sale"
+msgstr "Verkauf"
+
+msgctxt "field:sale.order-typified.description,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:sale.order-typified.description,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:sale.sale,terms:"
+msgid "Sale Terms"
+msgstr "Verkaufsbedingungen"
+
+msgctxt "field:typified.description,category:"
+msgid "Category"
+msgstr "Kategorie"
+
+msgctxt "field:typified.description,category_sequence:"
+msgid "Category Sequence"
+msgstr "Reihenfolge der Kategorie"
+
+msgctxt "field:typified.description,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:typified.description,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:typified.description,description:"
+msgid "Description"
+msgstr "Beschreibung"
+
+msgctxt "field:typified.description,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:typified.description,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:typified.description,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:typified.description,sequence:"
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+msgctxt "field:typified.description,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:typified.description,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:typified.description.category,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:typified.description.category,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:typified.description.category,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:typified.description.category,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:typified.description.category,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:typified.description.category,sequence:"
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+msgctxt "field:typified.description.category,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:typified.description.category,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "model:ir.action,name:act_typified_description"
+msgid "Sale Terms"
+msgstr "Verkaufsbedingungen"
+
+msgctxt "model:ir.action,name:act_typified_description_category"
+msgid "Categories"
+msgstr "Kategorien"
+
+msgctxt "model:ir.ui.menu,name:menu_typified_description"
+msgid "Sale Terms"
+msgstr "Verkaufsbedingungen"
+
+msgctxt "model:ir.ui.menu,name:menu_typified_description_category"
+msgid "Categories"
+msgstr "Kategorien"
+
+msgctxt "model:ir.ui.menu,name:menu_typified_description_form"
+msgid "Sale Terms"
+msgstr "Verkaufsbedingungen"
+
+msgctxt "model:res.group,name:group_typified_description_admin"
+msgid "Typified Description Administration"
+msgstr "Typsierte Beschreibung Administration"
+
+msgctxt "model:sale.line-typified.description,name:"
+msgid "Sale Line - TypifDescription"
+msgstr "Verkaufsposition - typisierte Beschreibung"
+
+msgctxt "model:sale.order-typified.description,name:"
+msgid "Sale Order - TypifDescription"
+msgstr "Verkaufsauftrag - typisierte Beschreibung"
+
+msgctxt "model:typified.description,name:"
+msgid "Typified Description"
+msgstr "Typisierte Beschreibung"
+
+msgctxt "model:typified.description.category,name:"
+msgid "Typfied Description Category"
+msgstr "Typisierte Beschreibung Kategegorie"
