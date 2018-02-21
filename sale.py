@@ -5,10 +5,10 @@ from trytond.pool import PoolMeta
 
 __all__ = ['Sale', 'SaleTypifiedDescription', 'SaleLine',
     'SaleLineTypifiedDescription']
-__metaclass__ = PoolMeta
 
 
 class Sale:
+    __metaclass__ = PoolMeta
     __name__ = 'sale.sale'
 
     terms = fields.Many2Many('sale.order-typified.description', 'sale',
@@ -16,7 +16,7 @@ class Sale:
 
 
 class SaleTypifiedDescription(ModelSQL):
-    'Sale Order - TypifDescription'
+    'Sale Order - Typified Description'
     __name__ = 'sale.order-typified.description'
 
     sale = fields.Many2One('sale.sale', 'Sale', ondelete='CASCADE',
@@ -26,6 +26,7 @@ class SaleTypifiedDescription(ModelSQL):
 
 
 class SaleLine:
+    __metaclass__ = PoolMeta
     __name__ = 'sale.line'
 
     terms = fields.Many2Many('sale.line-typified.description', 'line',
@@ -33,7 +34,7 @@ class SaleLine:
 
 
 class SaleLineTypifiedDescription(ModelSQL):
-    'Sale Line - TypifDescription'
+    'Sale Line - Typified Description'
     __name__ = 'sale.line-typified.description'
 
     line = fields.Many2One('sale.line', 'Sale Line', ondelete='CASCADE',

@@ -1,30 +1,21 @@
-#The COPYRIGHT file at the top level of this repository contains the full
-#copyright notices and license terms.
-from trytond.model import ModelSQL, ModelView, fields
+# The COPYRIGHT file at the top level of this repository contains the full
+# copyright notices and license terms.
+from sql import Null
+
+from trytond.model import ModelSQL, ModelView, sequence_ordered, fields
 from trytond.pool import Pool
 
 __all__ = ['Category', 'Description']
 
 
-class Category(ModelSQL, ModelView):
+class Category(sequence_ordered(), ModelSQL, ModelView):
     'Typfied Description Category'
     __name__ = 'typified.description.category'
 
-    sequence = fields.Integer('Sequence')
     name = fields.Char('Name', translate=True, required=True)
 
-    @staticmethod
-    def order_sequence(tables):
-        table, _ = tables[None]
-        return [table.sequence == None, table.sequence]
 
-    @classmethod
-    def __setup__(cls):
-        super(Category, cls).__setup__()
-        cls._order.insert(0, ('sequence', 'ASC'))
-
-
-class Description(ModelSQL, ModelView):
+class Description(sequence_ordered(), ModelSQL, ModelView):
     'Typified Description'
     __name__ = 'typified.description'
 
@@ -32,7 +23,6 @@ class Description(ModelSQL, ModelView):
     category = fields.Many2One('typified.description.category', 'Category',
         select=True)
     description = fields.Text('Description', translate=True, required=True)
-    sequence = fields.Integer('Sequence')
     category_sequence = fields.Function(fields.Integer('Category Sequence'),
         'get_category_sequence')
 
@@ -40,7 +30,10 @@ class Description(ModelSQL, ModelView):
     def __setup__(cls):
         super(Description, cls).__setup__()
         cls._order.insert(0, ('category_sequence', 'ASC'))
-        cls._order.insert(1, ('sequence', 'ASC'))
+
+    def get_category_sequence(self, name):
+        if self.category:
+            return self.category.sequence
 
     @staticmethod
     def order_category_sequence(tables):
@@ -55,9 +48,4 @@ class Description(ModelSQL, ModelView):
                 }
             tables['category'] = category_table
         table, _ = category_table[None]
-        return [table.sequence == None, table.sequence]
-
-    @staticmethod
-    def order_sequence(tables):
-        table, _ = tables[None]
-        return [table.sequence == None, table.sequence]
+        return [table.sequence == Null, table.sequence]

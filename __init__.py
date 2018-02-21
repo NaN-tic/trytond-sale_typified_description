@@ -1,16 +1,16 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.pool import Pool
-from .typified import *
-from .sale import *
+from . import typified
+from . import sale
 
 
 def register():
     Pool.register(
-        Category,
-        Description,
-        SaleTypifiedDescription,
-        SaleLineTypifiedDescription,
-        Sale,
-        SaleLine,
+        typified.Category,
+        typified.Description,
+        sale.SaleTypifiedDescription,
+        sale.SaleLineTypifiedDescription,
+        sale.Sale,
+        sale.SaleLine,
         module='sale_typified_description', type_='model')
