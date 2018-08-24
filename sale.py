@@ -7,8 +7,7 @@ __all__ = ['Sale', 'SaleTypifiedDescription', 'SaleLine',
     'SaleLineTypifiedDescription']
 
 
-class Sale:
-    __metaclass__ = PoolMeta
+class Sale(metaclass=PoolMeta):
     __name__ = 'sale.sale'
 
     terms = fields.Many2Many('sale.order-typified.description', 'sale',
@@ -25,8 +24,7 @@ class SaleTypifiedDescription(ModelSQL):
         ondelete='CASCADE', required=True, select=True)
 
 
-class SaleLine:
-    __metaclass__ = PoolMeta
+class SaleLine(metaclass=PoolMeta):
     __name__ = 'sale.line'
 
     terms = fields.Many2Many('sale.line-typified.description', 'line',
