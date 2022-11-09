@@ -19,9 +19,9 @@ class SaleTypifiedDescription(ModelSQL):
     __name__ = 'sale.order-typified.description'
 
     sale = fields.Many2One('sale.sale', 'Sale', ondelete='CASCADE',
-        required=True, select=True)
+        required=True)
     description = fields.Many2One('typified.description', 'Term',
-        ondelete='CASCADE', required=True, select=True)
+        ondelete='CASCADE', required=True)
 
 
 class SaleLine(metaclass=PoolMeta):
@@ -36,6 +36,6 @@ class SaleLineTypifiedDescription(ModelSQL):
     __name__ = 'sale.line-typified.description'
 
     line = fields.Many2One('sale.line', 'Sale Line', ondelete='CASCADE',
-        required=True, select=True)
+        required=True)
     description = fields.Many2One('typified.description', 'Term',
-        ondelete='CASCADE', required=True, select=True)
+        ondelete='CASCADE', required=True)

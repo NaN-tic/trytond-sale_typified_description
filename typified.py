@@ -20,8 +20,7 @@ class Description(sequence_ordered(), ModelSQL, ModelView):
     __name__ = 'typified.description'
 
     name = fields.Char('Name', translate=True, required=True)
-    category = fields.Many2One('typified.description.category', 'Category',
-        select=True)
+    category = fields.Many2One('typified.description.category', 'Category')
     description = fields.Text('Description', translate=True, required=True)
     category_sequence = fields.Function(fields.Integer('Category Sequence'),
         'get_category_sequence')
