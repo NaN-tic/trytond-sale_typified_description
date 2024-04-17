@@ -33,14 +33,14 @@
             <field name="act_window" ref="act_typified_description"/>
         </record>
         <record model="ir.model.access" id="access_typified_description">
-            <field name="model" search="[('model', '=', 'typified.description')]"/>
+            <field name="model">typified.description</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_typified_description_admin">
-            <field name="model" search="[('model', '=', 'typified.description')]"/>
+            <field name="model">typified.description</field>
             <field name="group" ref="group_typified_description_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
@@ -72,14 +72,14 @@
             <field name="act_window" ref="act_typified_description_category"/>
         </record>
         <record model="ir.model.access" id="access_typified_description_category">
-            <field name="model" search="[('model', '=', 'typified.description.category')]"/>
+            <field name="model">typified.description.category</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_typified_description_category_admin">
-            <field name="model" search="[('model', '=', 'typified.description.category')]"/>
+            <field name="model">typified.description.category</field>
             <field name="group" ref="group_typified_description_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
